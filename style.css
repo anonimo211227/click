@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos gerais */
+header {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .logo-pri img {
+        width: 100px;
+        /* Reduzir o tamanho da logo */
+    }
+
+    .watz img {
+        width: 40px;
+        /* Reduzir o tamanho do botão */
+    }
+
+    .watz {
+        margin-top: 5px;
+        margin-left: 0;
+        /* Centralizar o botão */
+    }
+
+    header {
+        flex-direction: column;
+        /* Empilhar elementos no header */
+        align-items: center;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .logo-pri img {
+        width: 80px;
+        /* Tamanho menor da logo */
+    }
+
+    .watz img {
+        width: 30px;
+        /* Tamanho menor do botão */
+    }
+
+    header {
+        padding: 5px;
+    }
+}
+
+.sld-1 {
+    background-color: #373975;
+    display: flex;
+    padding: 80px;
+}
+
+.text {
+    margin-top: 40px;
+    margin-left: 50px;
+    display: block;
+}
+
+.text-pri {
+    color: #ffffff;
+    font-size: 70px;
+    display: block;
+}
+
+.text-sec {
+    padding: 10px;
+    margin-top: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    display: block;
+}
+
+.bt1 button {
+    background-color: #FAC52C;
+    color: #373975;
+    border: none;
+    border-radius: 25px;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    text-transform: uppercase;
+
+}
+
+.sld-1 img {
+    display: flex;
+    margin-left: 250px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .sld-1 {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .text {
+        margin: 0;
+        text-align: center;
+    }
+
+    .text-pri {
+        font-size: 40px;
+    }
+
+    .text-sec {
+        font-size: 18px;
+    }
+
+    .bt1 button {
+        margin: 20px auto;
+        padding: 10px 30px;
+    }
+
+    .sld-1 img {
+        width: 1000%;
+        max-width: 3000px;
+        margin: 20px auto 0 auto;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .text-pri {
+        font-size: 28px;
+    }
+
+    .text-sec {
+        font-size: 16px;
+    }
+
+    .bt1 button {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+
+    .sld-1 img {
+        max-width: 200px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
