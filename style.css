@@ -54,7 +54,7 @@ header {
 
 .sld-1 {
     background-color: #373975;
-    display: flex;
+    display: block;
     padding: 80px;
 }
 
@@ -98,7 +98,6 @@ header {
 .sld-1 img {
     display: flex;
     margin-left: 250px;
-
 }
 
 /* Ajustes para telas menores */
@@ -127,10 +126,12 @@ header {
         padding: 10px 30px;
     }
 
-    .sld-1 img {
-        width: 1000%;
-        max-width: 3000px;
-        margin: 20px auto 0 auto;
+    @media (max-width: 768px) {
+        .sld-1 img {
+            max-width: 100%;
+            height: auto; /* Mantém proporção */
+            margin: 20px 0; /* Centraliza com espaçamento */
+        }
     }
 }
 
