@@ -98,6 +98,7 @@ header {
 .sld-1 img {
     display: flex;
     margin-left: 250px;
+    width: 100px;
 }
 
 /* Ajustes para telas menores */
